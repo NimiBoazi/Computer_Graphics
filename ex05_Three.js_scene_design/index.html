@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>HW5</title>
+		
+		<!-- Link to your new external stylesheet -->
+		<link rel="stylesheet" href="style.css">
+		
+		<!-- Your original Three.js script -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
+		
+		<!-- Script to load OrbitControls -->
+		<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+	</head>
+	<body>
+		<!-- UI Container for the Scoreboard -->
+		<div id="score-container">
+			<div id="home-score" class="score">00</div>
+			<div id="timer">12:00</div>
+			<div id="away-score" class="score">00</div>
+		</div>
+
+		<!-- UI Container for Controls Instructions -->
+		<div id="controls-container">
+			<p><strong>O</strong> - Toggle Camera Controls</p>
+			<div id="controls-status">
+				<p><strong>LMB</strong> - Orbit</p>
+				<p><strong>RMB</strong> - Pan</p>
+				<p><strong>Scroll</strong> - Zoom</p>
+			</div>
+		</div>
+		
+		<!-- Your main application script -->
+		<script src="src/hw5.js" type="module"></script>
+	</body>
+</html>
